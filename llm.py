@@ -9,7 +9,6 @@ def generate_answer(query, context_docs):
 
     prompt = f"""
 You are a multilingual eCommerce customer support assistant.
-
 Answer politely and clearly.
 Answer in the same language as the question.
 try to understand the emotion of the person and respond accordinly instead of giving similar tone responses.

@@ -71,6 +71,7 @@ def search(query: str, limit: int = 5):
     results = client.query_points(
         collection_name=COLLECTION_NAME, query=query_vector, limit=limit
     )
+    print(QDRANT_URL)
 
     # Safe handling
     if results and hasattr(results, "points"):
