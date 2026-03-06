@@ -1,6 +1,11 @@
 import uuid
+import hashlib
+import json
+import os
+
 from qdrant_client import QdrantClient
 from qdrant_client.models import VectorParams, Distance, PointStruct
+
 from config import QDRANT_URL, QDRANT_API_KEY, resolve_collection_name
 from embeddings import embed_text
 
@@ -12,12 +17,12 @@ from embeddings import embed_text
 client = QdrantClient(
     url=QDRANT_URL,
     api_key=QDRANT_API_KEY,
-    check_compatibility=False,  # avoids version warning
+    check_compatibility=False,
 )
 
 
 # ==============================
-# 🧠 CREATE COLLECTION
+# 🧠 COLLECTION HELPERS
 # ==============================
 
 
@@ -31,7 +36,7 @@ def _collection_exists(collection_name: str) -> bool:
 
 def create_collection(domain: str, recreate: bool = False):
     """
-    Creates a collection for the given domain (or recreates if requested).
+    Creates a collection for the given domain.
     OpenAI text-embedding-3-large → 3072 dimensions
     """
     collection_name = resolve_collection_name(domain)
@@ -52,17 +57,20 @@ def create_collection(domain: str, recreate: bool = False):
         collection_name=collection_name,
         vectors_config=VectorParams(size=3072, distance=Distance.COSINE),
     )
+
     print(f"Collection '{collection_name}' created successfully.")
 
 
 def list_collections() -> list[str]:
     cols = client.get_collections()
     collections = getattr(cols, "collections", None) or []
-    names: list[str] = []
+
+    names = []
     for c in collections:
         name = getattr(c, "name", None)
         if name:
             names.append(name)
+
     return names
 
 
@@ -73,13 +81,14 @@ def list_collections() -> list[str]:
 
 def insert_document(text: str, metadata: dict, domain: str):
     """
-    Inserts document into Qdrant with embedding + metadata for a given domain.
+    Inserts document into Qdrant with embedding + metadata.
     """
+
     vector = embed_text(text)
     collection_name = resolve_collection_name(domain)
 
     if not _collection_exists(collection_name):
-        create_collection(domain, recreate=False)
+        create_collection(domain)
 
     client.upsert(
         collection_name=collection_name,
@@ -94,15 +103,51 @@ def insert_document(text: str, metadata: dict, domain: str):
 
 
 # ==============================
-# 🔍 SEARCH (NEW API)
+# ⚡ RETRIEVAL CACHE
+# ==============================
+
+RETRIEVAL_CACHE_FILE = "retrieval_cache.json"
+
+if os.path.exists(RETRIEVAL_CACHE_FILE):
+    with open(RETRIEVAL_CACHE_FILE, "r") as f:
+        retrieval_cache = json.load(f)
+else:
+    retrieval_cache = {}
+
+
+def _cache_key(query: str, domain: str):
+    key_string = f"{query}:{domain}"
+    return hashlib.sha256(key_string.encode()).hexdigest()
+
+
+def _save_cache():
+    with open(RETRIEVAL_CACHE_FILE, "w") as f:
+        json.dump(retrieval_cache, f)
+
+
+# ==============================
+# 🔍 SEARCH
 # ==============================
 
 
 def search(query: str, domain: str, limit: int = 5):
     """
-    Searches Qdrant using new query_points() API for a given domain.
-    Returns list of points.
+    Searches Qdrant using query_points().
+    Uses retrieval cache for faster responses.
     """
+
+    cache_key = _cache_key(query, domain)
+
+    # ======================
+    # CACHE HIT
+    # ======================
+
+    if cache_key in retrieval_cache:
+        print("⚡ Retrieval Cache HIT")
+        return retrieval_cache[cache_key]
+
+    print("🗄️ Retrieval Cache MISS → querying Qdrant")
+
     query_vector = embed_text(query)
     collection_name = resolve_collection_name(domain)
 
@@ -110,11 +155,22 @@ def search(query: str, domain: str, limit: int = 5):
         return []
 
     results = client.query_points(
-        collection_name=collection_name, query=query_vector, limit=limit
+        collection_name=collection_name,
+        query=query_vector,
+        limit=limit,
     )
 
-    # Safe handling
-    if results and hasattr(results, "points"):
-        return results.points
+    points = []
 
-    return []
+    if results and hasattr(results, "points"):
+        for p in results.points:
+            points.append({"id": str(p.id), "score": p.score, "payload": p.payload})
+
+    # ======================
+    # STORE CACHE
+    # ======================
+
+    retrieval_cache[cache_key] = points
+    _save_cache()
+
+    return points

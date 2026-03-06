@@ -14,13 +14,15 @@ def run_rag(user_id, query, customer_type: str | None = None):
     Run the RAG pipeline.
 
     Steps:
-    1. Vector search (Qdrant)
+    1. Vector search (Qdrant / Cache)
     2. Graph expansion
     3. If retrieval weak → Tavily web search
     4. LLM generates final answer
     """
 
     domain = customer_type or DEFAULT_CUSTOMER_DOMAIN
+
+    print("\n🚀 Running RAG...")
 
     # ==========================================
     # VECTOR SEARCH
@@ -36,18 +38,20 @@ def run_rag(user_id, query, customer_type: str | None = None):
     # ==========================================
 
     for r in results:
-        payload = r.payload
+        payload = r.get("payload", {})
+        score = r.get("score", 0.0)
 
-        # Safely extract score
-        score = getattr(r, "score", 0.0)
-
-        # Track best score
+        # Track best similarity score
         best_score = max(best_score, score)
 
+        # Extract main document text
         if "text" in payload:
             docs.append(payload["text"])
 
-        # Graph expansion if product relation exists
+        # ======================================
+        # GRAPH EXPANSION
+        # ======================================
+
         if "product_id" in payload:
             neighbors = expand_graph(payload["product_id"])
             docs.extend(neighbors)
