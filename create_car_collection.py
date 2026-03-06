@@ -1,12 +1,14 @@
-from qdrant_client import QdrantClient
-from qdrant_client.models import VectorParams, Distance
-from config import QDRANT_URL, QDRANT_API_KEY
+from vector_store import create_collection
 
-client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY, check_compatibility=False)
 
-client.recreate_collection(
-    collection_name="car_booking",
-    vectors_config=VectorParams(size=3072, distance=Distance.COSINE),
-)
+if __name__ == "__main__":
+    # Add any domains you want collections for in this list.
+    domains = [
+        "car_booking",
+        # "ecommerce",
+    ]
 
-print("✅ car_booking collection created successfully.")
+    for domain in domains:
+        create_collection(domain)
+        print(f"✅ Collection for domain '{domain}' created successfully.")
+
