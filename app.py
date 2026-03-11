@@ -2,9 +2,12 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from rag_pipeline import run_rag
 from collections_api import router as collections_router
+from restaurant_backend.api import router as restaurant_router
 
 app = FastAPI()
 app.include_router(collections_router)
+
+app.include_router(restaurant_router)
 
 
 class ChatRequest(BaseModel):

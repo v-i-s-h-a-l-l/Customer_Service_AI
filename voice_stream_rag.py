@@ -9,48 +9,70 @@ import uuid
 # ==========================================================
 
 USER_ID = str(uuid.uuid4())
-CUSTOMER_TYPE: str | None = None  # "ecommerce" or "car_booking"
+CUSTOMER_TYPE: str | None = None
 
 print(f"🆔 Session ID: {USER_ID}")
 
 
 # ==========================================================
-# VOICE & CUSTOMER TYPE SELECTION
+# VOICE SELECTION
 # ==========================================================
 
 
 def choose_voice():
-    print("\nSelect Assistant Voice")
-    print("1 → Male")
-    print("2 → Female")
+    print("\n🎤 Select Assistant Voice\n")
 
-    choice = input("Enter choice: ").strip().lower()
+    print("1 → shubh (Male)")
+    print("2 → rohan (Male)")
+    print("3 → priya (Female)")
+    print("4 → Kavya (Female)")
+    print("5 → shruti (Female)")
 
-    if choice in ["1", "male", "m"]:
-        set_voice("male")
-    else:
-        set_voice("female")
+    choice = input("\nEnter voice number: ").strip()
+
+    voice_map = {
+        "1": "shubh",
+        "2": "rohan",
+        "3": "priya",
+        "4": "Kavya",
+        "5": "shruti",
+    }
+
+    selected_voice = voice_map.get(choice, "priya")
+
+    set_voice(selected_voice)
+
+
+# ==========================================================
+# CUSTOMER TYPE SELECTION
+# ==========================================================
 
 
 def choose_customer_type():
-    """
-    Ask the user which type of customer they are and
-    set the global CUSTOMER_TYPE accordingly.
-    """
     global CUSTOMER_TYPE
 
-    print("\nSelect Customer Type")
-    print("1 → ecommerce")
-    print("2 → car_booking")
+    print("\n📦 Select Customer Type / Domain\n")
 
-    choice = input("Enter choice: ").strip().lower()
+    print("1 → ecommerce support")
+    print("2 → car booking support")
+    print("3 → restaurant table booking")
+
+    choice = input("\nEnter choice: ").strip().lower()
 
     if choice in ["1", "ecommerce", "e"]:
         CUSTOMER_TYPE = "ecommerce"
-    else:
+
+    elif choice in ["2", "car_booking", "car", "c"]:
         CUSTOMER_TYPE = "car_booking"
 
-    print(f"✅ Using '{CUSTOMER_TYPE}' collection for this session.")
+    elif choice in ["3", "restaurant", "r"]:
+        CUSTOMER_TYPE = "restaurant"
+
+    else:
+        print("⚠ Invalid choice. Defaulting to restaurant booking.")
+        CUSTOMER_TYPE = "restaurant"
+
+    print(f"\n✅ Using '{CUSTOMER_TYPE}' domain for this session.")
 
 
 # ==========================================================
@@ -59,21 +81,22 @@ def choose_customer_type():
 
 
 def handle_query(text: str):
-    print("\n🚀 Running RAG...\n")
+    print("\n🗣 User said:", text)
+    print("\n🚀 Running AI pipeline...\n")
 
     try:
-        # Pass user_id and selected customer_type/domain
         response = run_rag(USER_ID, text, customer_type=CUSTOMER_TYPE)
 
-        print("\n🤖 Assistant:")
+        print("\n🤖 Assistant Response:\n")
         print(response)
+
         print("\n========================\n")
 
-        # Save TTS audio response
+        # Convert response to speech
         speak(response)
 
     except Exception as e:
-        print("❌ Error during RAG execution:", str(e))
+        print("❌ Error during execution:", str(e))
 
 
 # ==========================================================
@@ -81,12 +104,13 @@ def handle_query(text: str):
 # ==========================================================
 
 if __name__ == "__main__":
-    print("\n🎤 Voice RAG Session\n")
+    print("\n🎤 Voice AI Session Started\n")
+
     choose_voice()
+
     choose_customer_type()
 
-    print("\n🎤 Speak continuously (Ctrl+C to stop)\n")
+    print("\n🎧 Listening... Speak continuously (Ctrl+C to stop)\n")
 
-    # Start streaming speech → RAG
+    # Start streaming speech → STT → AI → TTS
     stream_audio_to_sarvam(handle_query)
-

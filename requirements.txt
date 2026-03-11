@@ -43,3 +43,7 @@ websockets>=15.0
 # UTILITIES
 # ===============================
 python-multipart>=0.0.9
+
+langchain>=0.2.0
+langgraph>=0.1.0
+pydantic>=2.7

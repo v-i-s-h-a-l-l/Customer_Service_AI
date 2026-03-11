@@ -3,10 +3,12 @@ from graph_layer import expand_graph
 from llm import generate_answer
 from config import DEFAULT_CUSTOMER_DOMAIN
 from web_search import search_web
+from routing.intent_router import detect_intent
+from agents.booking_agent import run_booking_agent
 
 
 # Good threshold for OpenAI embeddings
-SIMILARITY_THRESHOLD = 0.35
+SIMILARITY_THRESHOLD = 0.20
 
 
 def run_rag(user_id, query, customer_type: str | None = None):
@@ -14,11 +16,28 @@ def run_rag(user_id, query, customer_type: str | None = None):
     Run the RAG pipeline.
 
     Steps:
-    1. Vector search (Qdrant / Cache)
-    2. Graph expansion
-    3. If retrieval weak → Tavily web search
-    4. LLM generates final answer
+    1. Intent detection
+    2. Booking → LangGraph agent
+    3. Otherwise → RAG pipeline
+    4. Vector search
+    5. Graph expansion
+    6. Tavily fallback
+    7. LLM generates final answer
     """
+
+    # =====================================================
+    # INTENT ROUTING
+    # =====================================================
+
+    intent = detect_intent(query)
+
+    if intent == "booking":
+        print("🍽 Booking intent detected → Using LangGraph agent")
+        return run_booking_agent(query)
+
+    # =====================================================
+    # NORMAL RAG PIPELINE
+    # =====================================================
 
     domain = customer_type or DEFAULT_CUSTOMER_DOMAIN
 
@@ -41,10 +60,8 @@ def run_rag(user_id, query, customer_type: str | None = None):
         payload = r.get("payload", {})
         score = r.get("score", 0.0)
 
-        # Track best similarity score
         best_score = max(best_score, score)
 
-        # Extract main document text
         if "text" in payload:
             docs.append(payload["text"])
 
