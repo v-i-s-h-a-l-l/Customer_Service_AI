@@ -1,0 +1,2932 @@
+module.exports = [
+"[project]/src/components/ui.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "AnimatedSection",
+    ()=>AnimatedSection,
+    "GoldButton",
+    ()=>GoldButton,
+    "OutlineButton",
+    ()=>OutlineButton,
+    "SectionDivider",
+    ()=>SectionDivider,
+    "SectionHeading",
+    ()=>SectionHeading
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+function AnimatedSection({ children, className = "", delay = 0 }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+        initial: {
+            opacity: 0,
+            y: 40
+        },
+        whileInView: {
+            opacity: 1,
+            y: 0
+        },
+        viewport: {
+            once: true,
+            margin: "-80px"
+        },
+        transition: {
+            duration: 0.7,
+            delay,
+            ease: "easeOut"
+        },
+        className: className,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui.tsx",
+        lineNumber: 14,
+        columnNumber: 5
+    }, this);
+}
+function SectionDivider() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+        initial: {
+            scaleX: 0
+        },
+        whileInView: {
+            scaleX: 1
+        },
+        viewport: {
+            once: true
+        },
+        transition: {
+            duration: 0.8,
+            ease: "easeOut"
+        },
+        className: "w-20 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto my-4"
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui.tsx",
+        lineNumber: 28,
+        columnNumber: 5
+    }, this);
+}
+function SectionHeading({ subtitle, title }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "text-center mb-16",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimatedSection, {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-gold text-xs tracking-[0.3em] uppercase mb-4",
+                    children: subtitle
+                }, void 0, false, {
+                    fileName: "[project]/src/components/ui.tsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui.tsx",
+                lineNumber: 41,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimatedSection, {
+                delay: 0.1,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "font-serif text-4xl md:text-5xl text-warm-white mb-6",
+                    children: title
+                }, void 0, false, {
+                    fileName: "[project]/src/components/ui.tsx",
+                    lineNumber: 45,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui.tsx",
+                lineNumber: 44,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionDivider, {}, void 0, false, {
+                fileName: "[project]/src/components/ui.tsx",
+                lineNumber: 47,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui.tsx",
+        lineNumber: 40,
+        columnNumber: 5
+    }, this);
+}
+function GoldButton({ children, onClick, className = "", type = "button" }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+        whileHover: {
+            scale: 1.03
+        },
+        whileTap: {
+            scale: 0.97
+        },
+        type: type,
+        onClick: onClick,
+        className: `px-8 py-3 bg-gold text-charcoal-deep font-semibold text-sm tracking-wider uppercase hover:bg-gold-light transition-colors duration-300 rounded-sm ${className}`,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui.tsx",
+        lineNumber: 64,
+        columnNumber: 5
+    }, this);
+}
+function OutlineButton({ children, onClick, className = "" }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+        whileHover: {
+            scale: 1.03
+        },
+        whileTap: {
+            scale: 0.97
+        },
+        onClick: onClick,
+        className: `px-8 py-3 border border-gold/50 text-gold text-sm tracking-wider uppercase hover:bg-gold hover:text-charcoal-deep transition-all duration-300 rounded-sm ${className}`,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui.tsx",
+        lineNumber: 86,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/src/app/page.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Home
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/styled-jsx/style.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$scroll$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-scroll.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-ssr] (ecmascript) <export default as Star>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chef$2d$hat$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChefHat$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chef-hat.js [app-ssr] (ecmascript) <export default as ChefHat>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$utensils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Utensils$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/utensils.js [app-ssr] (ecmascript) <export default as Utensils>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wine$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Wine$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/wine.js [app-ssr] (ecmascript) <export default as Wine>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-ssr] (ecmascript) <export default as Clock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/award.js [app-ssr] (ecmascript) <export default as Award>");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+/* ───────── HERO ───────── */ function Hero() {
+    const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const { scrollYProgress } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$scroll$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useScroll"])({
+        target: ref,
+        offset: [
+            "start start",
+            "end start"
+        ]
+    });
+    const y = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransform"])(scrollYProgress, [
+        0,
+        1
+    ], [
+        "0%",
+        "30%"
+    ]);
+    const opacity = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTransform"])(scrollYProgress, [
+        0,
+        0.8
+    ], [
+        1,
+        0
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        ref: ref,
+        className: "jsx-af4fd6c88543caf" + " " + "relative w-full min-h-[calc(100vh-6rem)] overflow-hidden flex items-center justify-center",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                style: {
+                    y
+                },
+                className: "absolute inset-0 bg-cover bg-center",
+                id: "hero-bg"
+            }, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                id: "af4fd6c88543caf",
+                children: "#hero-bg.jsx-af4fd6c88543caf{background-image:url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80)}"
+            }, void 0, false, void 0, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "jsx-af4fd6c88543caf" + " " + "absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/70 via-[#0D0D0D]/50 to-[#0D0D0D]"
+            }, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 32,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                style: {
+                    opacity
+                },
+                className: "relative text-center px-6 sm:px-8 max-w-4xl mx-auto",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
+                        initial: {
+                            opacity: 0,
+                            y: 20
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            delay: 0.3,
+                            duration: 0.8
+                        },
+                        className: "text-[#C9A96E] text-xs tracking-[0.4em] uppercase mb-8",
+                        children: "A Culinary Masterpiece"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
+                        initial: {
+                            opacity: 0,
+                            y: 30
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            delay: 0.5,
+                            duration: 0.8
+                        },
+                        className: "font-serif text-5xl md:text-7xl lg:text-8xl text-[#F5F0EB] mb-8 leading-tight",
+                        children: [
+                            "Aurora ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "jsx-af4fd6c88543caf" + " " + "gold-gradient-text italic",
+                                children: "Dining"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 50,
+                                columnNumber: 18
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
+                        initial: {
+                            opacity: 0,
+                            y: 20
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            delay: 0.7,
+                            duration: 0.8
+                        },
+                        className: "text-[#F5F0EB]/60 text-lg md:text-xl font-light max-w-2xl mx-auto mb-14 font-cormorant tracking-wide",
+                        children: "Where culinary artistry meets timeless elegance — an unforgettable dining experience awaits"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 20
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            delay: 0.9,
+                            duration: 0.8
+                        },
+                        className: "flex flex-col sm:flex-row gap-6 justify-center",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/contact",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GoldButton"], {
+                                    children: "Reserve a Table"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/page.tsx",
+                                    lineNumber: 69,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 68,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/menu",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["OutlineButton"], {
+                                    children: "View Menu"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/page.tsx",
+                                    lineNumber: 72,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 71,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 62,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 34,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0
+                },
+                animate: {
+                    opacity: 1
+                },
+                transition: {
+                    delay: 1.5
+                },
+                className: "absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "jsx-af4fd6c88543caf" + " " + "text-[#C9A96E]/50 text-[10px] tracking-[0.3em] uppercase",
+                        children: "Scroll"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 84,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                        animate: {
+                            y: [
+                                0,
+                                8,
+                                0
+                            ]
+                        },
+                        transition: {
+                            repeat: Infinity,
+                            duration: 1.5
+                        },
+                        className: "w-px h-10 bg-gradient-to-b from-[#C9A96E]/50 to-transparent"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 85,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 78,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/page.tsx",
+        lineNumber: 17,
+        columnNumber: 5
+    }, this);
+}
+/* ───────── FEATURED DISHES ───────── */ const dishes = [
+    {
+        name: "Seared Wagyu Tenderloin",
+        desc: "Black truffle jus, potato fondant, seasonal vegetables",
+        price: "$125",
+        img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&q=80"
+    },
+    {
+        name: "Lobster Thermidor",
+        desc: "Classic French preparation, gruyère crust, drawn butter",
+        price: "$98",
+        img: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80"
+    },
+    {
+        name: "Truffle Risotto",
+        desc: "Arborio rice, parmigiano-reggiano, shaved black truffle",
+        price: "$72",
+        img: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=80"
+    },
+    {
+        name: "Pan-Seared Foie Gras",
+        desc: "Caramelized fig, brioche toast, aged balsamic",
+        price: "$85",
+        img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80"
+    }
+];
+function FeaturedDishes() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "w-full py-32 lg:py-40 overflow-hidden",
+        style: {
+            backgroundColor: '#0D0D0D'
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl mx-auto px-6 lg:px-10",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SectionHeading"], {
+                    subtitle: "Signature Creations",
+                    title: "Featured Dishes"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 107,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8",
+                    children: dishes.map((dish, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedSection"], {
+                            delay: i * 0.1,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                whileHover: {
+                                    y: -8
+                                },
+                                className: "group rounded-xl overflow-hidden cursor-pointer",
+                                style: {
+                                    background: 'rgba(26, 26, 26, 0.6)',
+                                    backdropFilter: 'blur(20px)',
+                                    border: '1px solid rgba(201, 169, 110, 0.15)'
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "relative aspect-[4/3] overflow-hidden",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: dish.img,
+                                                alt: dish.name,
+                                                className: "w-full h-full object-cover rounded-t-xl group-hover:scale-110 transition-transform duration-700"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/page.tsx",
+                                                lineNumber: 117,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 bg-gradient-to-t from-[#0D0D0D] to-transparent opacity-60"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/page.tsx",
+                                                lineNumber: 122,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "absolute top-4 right-4 text-sm font-semibold px-4 py-1.5 rounded",
+                                                style: {
+                                                    backgroundColor: 'rgba(201, 169, 110, 0.9)',
+                                                    color: '#0D0D0D'
+                                                },
+                                                children: dish.price
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/page.tsx",
+                                                lineNumber: 123,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 116,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "p-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "font-serif text-lg text-[#F5F0EB] group-hover:text-[#C9A96E] transition-colors duration-300 mb-3",
+                                                children: dish.name
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/page.tsx",
+                                                lineNumber: 128,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-sm text-[#F5F0EB]/40 leading-relaxed",
+                                                children: dish.desc
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/page.tsx",
+                                                lineNumber: 131,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 127,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 111,
+                                columnNumber: 13
+                            }, this)
+                        }, dish.name, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 110,
+                            columnNumber: 11
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 108,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/page.tsx",
+            lineNumber: 106,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/app/page.tsx",
+        lineNumber: 105,
+        columnNumber: 5
+    }, this);
+}
+/* ───────── CHEF SPOTLIGHT ───────── */ function ChefSpotlight() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "w-full py-32 lg:py-40 overflow-hidden",
+        style: {
+            backgroundColor: '#1A1A1A'
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedSection"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                src: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=80",
+                                alt: "Chef Marcus Laurent",
+                                className: "w-full h-[550px] object-cover rounded-xl"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 149,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute -bottom-6 -right-6 w-36 h-36 rounded-xl hidden lg:block",
+                                style: {
+                                    border: '1px solid rgba(201, 169, 110, 0.3)'
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 154,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 148,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 147,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedSection"], {
+                    delay: 0.2,
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[#C9A96E] text-xs tracking-[0.3em] uppercase mb-5",
+                            children: "Meet Our Chef"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 158,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "font-serif text-4xl md:text-5xl text-[#F5F0EB] mb-8",
+                            children: "Marcus Laurent"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 159,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SectionDivider"], {}, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 160,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[#F5F0EB]/50 leading-relaxed mt-8 mb-5 text-base",
+                            children: "With over two decades of culinary excellence across the world's most prestigious kitchens, Chef Marcus brings a philosophy rooted in respect for ingredients and innovative technique."
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 161,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[#F5F0EB]/50 leading-relaxed mb-10 text-base",
+                            children: "His creations seamlessly blend classical French training with modern gastronomy, creating dishes that are both familiar and wonderfully surprising."
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 165,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex gap-12",
+                            children: [
+                                {
+                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"],
+                                    label: "Michelin Stars",
+                                    value: "3"
+                                },
+                                {
+                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"],
+                                    label: "Years Experience",
+                                    value: "24"
+                                }
+                            ].map(({ icon: Icon, label, value })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                            className: "text-[#C9A96E] mb-3",
+                                            size: 22
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/page.tsx",
+                                            lineNumber: 175,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "font-serif text-3xl text-[#F5F0EB]",
+                                            children: value
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/page.tsx",
+                                            lineNumber: 176,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-[#F5F0EB]/40 tracking-wider uppercase mt-1",
+                                            children: label
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/page.tsx",
+                                            lineNumber: 177,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, label, true, {
+                                    fileName: "[project]/src/app/page.tsx",
+                                    lineNumber: 174,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 169,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 157,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/page.tsx",
+            lineNumber: 146,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/app/page.tsx",
+        lineNumber: 145,
+        columnNumber: 5
+    }, this);
+}
+/* ───────── EXPERIENCE HIGHLIGHTS ───────── */ function ExperienceHighlights() {
+    const highlights = [
+        {
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$utensils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Utensils$3e$__["Utensils"],
+            title: "Exquisite Cuisine",
+            desc: "Seasonal tasting menus crafted from the finest ingredients sourced globally."
+        },
+        {
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wine$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Wine$3e$__["Wine"],
+            title: "Curated Wines",
+            desc: "An award-winning wine program with over 500 labels from the world's top vineyards."
+        },
+        {
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chef$2d$hat$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChefHat$3e$__["ChefHat"],
+            title: "Private Dining",
+            desc: "Intimate private dining experiences for celebrations, corporate events, and special occasions."
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "w-full py-32 lg:py-40 overflow-hidden",
+        style: {
+            backgroundColor: '#0D0D0D'
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl mx-auto px-6 lg:px-10",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex justify-center",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SectionHeading"], {
+                        subtitle: "The Experience",
+                        title: "Why Aurora"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 199,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 198,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-1 md:grid-cols-3 gap-10 mt-8",
+                    children: highlights.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedSection"], {
+                            delay: i * 0.15,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                whileHover: {
+                                    y: -5
+                                },
+                                className: "rounded-xl p-10 text-center group cursor-pointer",
+                                style: {
+                                    background: 'rgba(255, 255, 255, 0.05)',
+                                    backdropFilter: 'blur(16px)',
+                                    border: '1px solid rgba(255, 255, 255, 0.08)'
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-16 h-16 mx-auto mb-8 rounded-full flex items-center justify-center group-hover:border-[#C9A96E]/60 transition-colors",
+                                        style: {
+                                            border: '1px solid rgba(201, 169, 110, 0.3)'
+                                        },
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(item.icon, {
+                                            className: "text-[#C9A96E]",
+                                            size: 26
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/page.tsx",
+                                            lineNumber: 210,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 209,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "font-serif text-xl text-[#F5F0EB] mb-4",
+                                        children: item.title
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 212,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm text-[#F5F0EB]/40 leading-relaxed",
+                                        children: item.desc
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 213,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 204,
+                                columnNumber: 13
+                            }, this)
+                        }, item.title, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 203,
+                            columnNumber: 11
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 201,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/page.tsx",
+            lineNumber: 197,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/app/page.tsx",
+        lineNumber: 196,
+        columnNumber: 5
+    }, this);
+}
+/* ───────── TESTIMONIALS ───────── */ const testimonials = [
+    {
+        text: "An extraordinary culinary journey. Every dish was a masterpiece of flavor and presentation.",
+        author: "Elena R.",
+        role: "Food Critic, The Times"
+    },
+    {
+        text: "The most memorable dining experience of my life. Aurora sets the gold standard for fine dining.",
+        author: "James K.",
+        role: "Michelin Guide"
+    },
+    {
+        text: "Impeccable service, breathtaking ambiance, and food that transcends expectation. A true gem.",
+        author: "Sophia M.",
+        role: "Travel & Leisure"
+    }
+];
+function Testimonials() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "w-full py-32 lg:py-40 overflow-hidden",
+        style: {
+            backgroundColor: '#1A1A1A'
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl mx-auto px-6 lg:px-10",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex justify-center",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SectionHeading"], {
+                        subtitle: "Guest Experiences",
+                        title: "What They Say"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 235,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 234,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-1 md:grid-cols-3 gap-10 mt-8",
+                    children: testimonials.map((t, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedSection"], {
+                            delay: i * 0.15,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "rounded-xl p-10 relative",
+                                style: {
+                                    background: 'rgba(255, 255, 255, 0.05)',
+                                    backdropFilter: 'blur(16px)',
+                                    border: '1px solid rgba(255, 255, 255, 0.08)'
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex gap-1.5 mb-6",
+                                        children: [
+                                            ...Array(5)
+                                        ].map((_, j)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
+                                                size: 16,
+                                                className: "text-[#C9A96E]",
+                                                fill: "#C9A96E"
+                                            }, j, false, {
+                                                fileName: "[project]/src/app/page.tsx",
+                                                lineNumber: 243,
+                                                columnNumber: 19
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 241,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-[#F5F0EB]/60 italic leading-relaxed mb-8 font-cormorant text-lg",
+                                        children: [
+                                            "“",
+                                            t.text,
+                                            "”"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 246,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-[#F5F0EB] font-medium text-sm mb-1",
+                                                children: t.author
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/page.tsx",
+                                                lineNumber: 250,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-[#C9A96E]/60 text-xs",
+                                                children: t.role
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/page.tsx",
+                                                lineNumber: 251,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 249,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 240,
+                                columnNumber: 13
+                            }, this)
+                        }, t.author, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 239,
+                            columnNumber: 11
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 237,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/page.tsx",
+            lineNumber: 233,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/app/page.tsx",
+        lineNumber: 232,
+        columnNumber: 5
+    }, this);
+}
+/* ───────── RESERVATION CTA ───────── */ function ReservationCTA() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "relative w-full py-32 lg:py-40 overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 bg-cover bg-center bg-fixed",
+                style: {
+                    backgroundImage: "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80')"
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 266,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0",
+                style: {
+                    backgroundColor: 'rgba(13, 13, 13, 0.8)'
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 270,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative text-center max-w-2xl mx-auto px-6",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedSection"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[#C9A96E] text-xs tracking-[0.3em] uppercase mb-5",
+                            children: "Begin Your Journey"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 273,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "font-serif text-4xl md:text-5xl text-[#F5F0EB] mb-8",
+                            children: "Reserve Your Table"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 274,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SectionDivider"], {}, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 275,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[#F5F0EB]/50 mt-8 mb-14 font-cormorant text-lg tracking-wide",
+                            children: "Join us for an unforgettable evening of culinary excellence. Reserve your place at Aurora Dining."
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 276,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/contact",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GoldButton"], {
+                                children: "Make a Reservation"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 280,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 279,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 272,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 271,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/page.tsx",
+        lineNumber: 265,
+        columnNumber: 5
+    }, this);
+}
+function Home() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Hero, {}, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 292,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FeaturedDishes, {}, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 293,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ChefSpotlight, {}, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 294,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ExperienceHighlights, {}, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 295,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Testimonials, {}, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 296,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ReservationCTA, {}, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 297,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+}),
+"[project]/node_modules/next/dist/compiled/client-only/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+}),
+"[project]/node_modules/styled-jsx/dist/index/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+__turbopack_context__.r("[project]/node_modules/next/dist/compiled/client-only/index.js [app-ssr] (ecmascript)");
+var React = __turbopack_context__.r("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+function _interopDefaultLegacy(e) {
+    return e && typeof e === 'object' && 'default' in e ? e : {
+        'default': e
+    };
+}
+var React__default = /*#__PURE__*/ _interopDefaultLegacy(React);
+/*
+Based on Glamor's sheet
+https://github.com/threepointone/glamor/blob/667b480d31b3721a905021b26e1290ce92ca2879/src/sheet.js
+*/ function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+var isProd = typeof process !== "undefined" && process.env && ("TURBOPACK compile-time value", "development") === "production";
+var isString = function(o) {
+    return Object.prototype.toString.call(o) === "[object String]";
+};
+var StyleSheet = /*#__PURE__*/ function() {
+    function StyleSheet(param) {
+        var ref = param === void 0 ? {} : param, _name = ref.name, name = _name === void 0 ? "stylesheet" : _name, _optimizeForSpeed = ref.optimizeForSpeed, optimizeForSpeed = _optimizeForSpeed === void 0 ? isProd : _optimizeForSpeed;
+        invariant$1(isString(name), "`name` must be a string");
+        this._name = name;
+        this._deletedRulePlaceholder = "#" + name + "-deleted-rule____{}";
+        invariant$1(typeof optimizeForSpeed === "boolean", "`optimizeForSpeed` must be a boolean");
+        this._optimizeForSpeed = optimizeForSpeed;
+        this._serverSheet = undefined;
+        this._tags = [];
+        this._injected = false;
+        this._rulesCount = 0;
+        var node = ("TURBOPACK compile-time value", "undefined") !== "undefined" && document.querySelector('meta[property="csp-nonce"]');
+        this._nonce = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : null;
+    }
+    var _proto = StyleSheet.prototype;
+    _proto.setOptimizeForSpeed = function setOptimizeForSpeed(bool) {
+        invariant$1(typeof bool === "boolean", "`setOptimizeForSpeed` accepts a boolean");
+        invariant$1(this._rulesCount === 0, "optimizeForSpeed cannot be when rules have already been inserted");
+        this.flush();
+        this._optimizeForSpeed = bool;
+        this.inject();
+    };
+    _proto.isOptimizeForSpeed = function isOptimizeForSpeed() {
+        return this._optimizeForSpeed;
+    };
+    _proto.inject = function inject() {
+        var _this = this;
+        invariant$1(!this._injected, "sheet already injected");
+        this._injected = true;
+        if (("TURBOPACK compile-time value", "undefined") !== "undefined" && this._optimizeForSpeed) //TURBOPACK unreachable
+        ;
+        this._serverSheet = {
+            cssRules: [],
+            insertRule: function(rule, index) {
+                if (typeof index === "number") {
+                    _this._serverSheet.cssRules[index] = {
+                        cssText: rule
+                    };
+                } else {
+                    _this._serverSheet.cssRules.push({
+                        cssText: rule
+                    });
+                }
+                return index;
+            },
+            deleteRule: function(index) {
+                _this._serverSheet.cssRules[index] = null;
+            }
+        };
+    };
+    _proto.getSheetForTag = function getSheetForTag(tag) {
+        if (tag.sheet) {
+            return tag.sheet;
+        }
+        // this weirdness brought to you by firefox
+        for(var i = 0; i < document.styleSheets.length; i++){
+            if (document.styleSheets[i].ownerNode === tag) {
+                return document.styleSheets[i];
+            }
+        }
+    };
+    _proto.getSheet = function getSheet() {
+        return this.getSheetForTag(this._tags[this._tags.length - 1]);
+    };
+    _proto.insertRule = function insertRule(rule, index) {
+        invariant$1(isString(rule), "`insertRule` accepts only strings");
+        if ("TURBOPACK compile-time truthy", 1) {
+            if (typeof index !== "number") {
+                index = this._serverSheet.cssRules.length;
+            }
+            this._serverSheet.insertRule(rule, index);
+            return this._rulesCount++;
+        }
+        //TURBOPACK unreachable
+        ;
+        var sheet;
+        var insertionPoint;
+    };
+    _proto.replaceRule = function replaceRule(index, rule) {
+        if (this._optimizeForSpeed || ("TURBOPACK compile-time value", "undefined") === "undefined") {
+            var sheet = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : this._serverSheet;
+            if (!rule.trim()) {
+                rule = this._deletedRulePlaceholder;
+            }
+            if (!sheet.cssRules[index]) {
+                // @TBD Should we throw an error?
+                return index;
+            }
+            sheet.deleteRule(index);
+            try {
+                sheet.insertRule(rule, index);
+            } catch (error) {
+                if ("TURBOPACK compile-time truthy", 1) {
+                    console.warn("StyleSheet: illegal rule: \n\n" + rule + "\n\nSee https://stackoverflow.com/q/20007992 for more info");
+                }
+                // In order to preserve the indices we insert a deleteRulePlaceholder
+                sheet.insertRule(this._deletedRulePlaceholder, index);
+            }
+        } else //TURBOPACK unreachable
+        {
+            var tag;
+        }
+        return index;
+    };
+    _proto.deleteRule = function deleteRule(index) {
+        if ("TURBOPACK compile-time truthy", 1) {
+            this._serverSheet.deleteRule(index);
+            return;
+        }
+        //TURBOPACK unreachable
+        ;
+        var tag;
+    };
+    _proto.flush = function flush() {
+        this._injected = false;
+        this._rulesCount = 0;
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+        else {
+            // simpler on server
+            this._serverSheet.cssRules = [];
+        }
+    };
+    _proto.cssRules = function cssRules() {
+        var _this = this;
+        if ("TURBOPACK compile-time truthy", 1) {
+            return this._serverSheet.cssRules;
+        }
+        //TURBOPACK unreachable
+        ;
+    };
+    _proto.makeStyleTag = function makeStyleTag(name, cssString, relativeToTag) {
+        if (cssString) {
+            invariant$1(isString(cssString), "makeStyleTag accepts only strings as second parameter");
+        }
+        var tag = document.createElement("style");
+        if (this._nonce) tag.setAttribute("nonce", this._nonce);
+        tag.type = "text/css";
+        tag.setAttribute("data-" + name, "");
+        if (cssString) {
+            tag.appendChild(document.createTextNode(cssString));
+        }
+        var head = document.head || document.getElementsByTagName("head")[0];
+        if (relativeToTag) {
+            head.insertBefore(tag, relativeToTag);
+        } else {
+            head.appendChild(tag);
+        }
+        return tag;
+    };
+    _createClass(StyleSheet, [
+        {
+            key: "length",
+            get: function get() {
+                return this._rulesCount;
+            }
+        }
+    ]);
+    return StyleSheet;
+}();
+function invariant$1(condition, message) {
+    if (!condition) {
+        throw new Error("StyleSheet: " + message + ".");
+    }
+}
+function hash(str) {
+    var _$hash = 5381, i = str.length;
+    while(i){
+        _$hash = _$hash * 33 ^ str.charCodeAt(--i);
+    }
+    /* JavaScript does bitwise operations (like XOR, above) on 32-bit signed
+   * integers. Since we want the results to be always positive, convert the
+   * signed int to an unsigned by doing an unsigned bitshift. */ return _$hash >>> 0;
+}
+var stringHash = hash;
+var sanitize = function(rule) {
+    return rule.replace(/\/style/gi, "\\/style");
+};
+var cache = {};
+/**
+ * computeId
+ *
+ * Compute and memoize a jsx id from a basedId and optionally props.
+ */ function computeId(baseId, props) {
+    if (!props) {
+        return "jsx-" + baseId;
+    }
+    var propsToString = String(props);
+    var key = baseId + propsToString;
+    if (!cache[key]) {
+        cache[key] = "jsx-" + stringHash(baseId + "-" + propsToString);
+    }
+    return cache[key];
+}
+/**
+ * computeSelector
+ *
+ * Compute and memoize dynamic selectors.
+ */ function computeSelector(id, css) {
+    var selectoPlaceholderRegexp = /__jsx-style-dynamic-selector/g;
+    // Sanitize SSR-ed CSS.
+    // Client side code doesn't need to be sanitized since we use
+    // document.createTextNode (dev) and the CSSOM api sheet.insertRule (prod).
+    if ("TURBOPACK compile-time truthy", 1) {
+        css = sanitize(css);
+    }
+    var idcss = id + css;
+    if (!cache[idcss]) {
+        cache[idcss] = css.replace(selectoPlaceholderRegexp, id);
+    }
+    return cache[idcss];
+}
+function mapRulesToStyle(cssRules, options) {
+    if (options === void 0) options = {};
+    return cssRules.map(function(args) {
+        var id = args[0];
+        var css = args[1];
+        return /*#__PURE__*/ React__default["default"].createElement("style", {
+            id: "__" + id,
+            // Avoid warnings upon render with a key
+            key: "__" + id,
+            nonce: options.nonce ? options.nonce : undefined,
+            dangerouslySetInnerHTML: {
+                __html: css
+            }
+        });
+    });
+}
+var StyleSheetRegistry = /*#__PURE__*/ function() {
+    function StyleSheetRegistry(param) {
+        var ref = param === void 0 ? {} : param, _styleSheet = ref.styleSheet, styleSheet = _styleSheet === void 0 ? null : _styleSheet, _optimizeForSpeed = ref.optimizeForSpeed, optimizeForSpeed = _optimizeForSpeed === void 0 ? false : _optimizeForSpeed;
+        this._sheet = styleSheet || new StyleSheet({
+            name: "styled-jsx",
+            optimizeForSpeed: optimizeForSpeed
+        });
+        this._sheet.inject();
+        if (styleSheet && typeof optimizeForSpeed === "boolean") {
+            this._sheet.setOptimizeForSpeed(optimizeForSpeed);
+            this._optimizeForSpeed = this._sheet.isOptimizeForSpeed();
+        }
+        this._fromServer = undefined;
+        this._indices = {};
+        this._instancesCounts = {};
+    }
+    var _proto = StyleSheetRegistry.prototype;
+    _proto.add = function add(props) {
+        var _this = this;
+        if (undefined === this._optimizeForSpeed) {
+            this._optimizeForSpeed = Array.isArray(props.children);
+            this._sheet.setOptimizeForSpeed(this._optimizeForSpeed);
+            this._optimizeForSpeed = this._sheet.isOptimizeForSpeed();
+        }
+        if (("TURBOPACK compile-time value", "undefined") !== "undefined" && !this._fromServer) //TURBOPACK unreachable
+        ;
+        var ref = this.getIdAndRules(props), styleId = ref.styleId, rules = ref.rules;
+        // Deduping: just increase the instances count.
+        if (styleId in this._instancesCounts) {
+            this._instancesCounts[styleId] += 1;
+            return;
+        }
+        var indices = rules.map(function(rule) {
+            return _this._sheet.insertRule(rule);
+        }) // Filter out invalid rules
+        .filter(function(index) {
+            return index !== -1;
+        });
+        this._indices[styleId] = indices;
+        this._instancesCounts[styleId] = 1;
+    };
+    _proto.remove = function remove(props) {
+        var _this = this;
+        var styleId = this.getIdAndRules(props).styleId;
+        invariant(styleId in this._instancesCounts, "styleId: `" + styleId + "` not found");
+        this._instancesCounts[styleId] -= 1;
+        if (this._instancesCounts[styleId] < 1) {
+            var tagFromServer = this._fromServer && this._fromServer[styleId];
+            if (tagFromServer) {
+                tagFromServer.parentNode.removeChild(tagFromServer);
+                delete this._fromServer[styleId];
+            } else {
+                this._indices[styleId].forEach(function(index) {
+                    return _this._sheet.deleteRule(index);
+                });
+                delete this._indices[styleId];
+            }
+            delete this._instancesCounts[styleId];
+        }
+    };
+    _proto.update = function update(props, nextProps) {
+        this.add(nextProps);
+        this.remove(props);
+    };
+    _proto.flush = function flush() {
+        this._sheet.flush();
+        this._sheet.inject();
+        this._fromServer = undefined;
+        this._indices = {};
+        this._instancesCounts = {};
+    };
+    _proto.cssRules = function cssRules() {
+        var _this = this;
+        var fromServer = this._fromServer ? Object.keys(this._fromServer).map(function(styleId) {
+            return [
+                styleId,
+                _this._fromServer[styleId]
+            ];
+        }) : [];
+        var cssRules = this._sheet.cssRules();
+        return fromServer.concat(Object.keys(this._indices).map(function(styleId) {
+            return [
+                styleId,
+                _this._indices[styleId].map(function(index) {
+                    return cssRules[index].cssText;
+                }).join(_this._optimizeForSpeed ? "" : "\n")
+            ];
+        }) // filter out empty rules
+        .filter(function(rule) {
+            return Boolean(rule[1]);
+        }));
+    };
+    _proto.styles = function styles(options) {
+        return mapRulesToStyle(this.cssRules(), options);
+    };
+    _proto.getIdAndRules = function getIdAndRules(props) {
+        var css = props.children, dynamic = props.dynamic, id = props.id;
+        if (dynamic) {
+            var styleId = computeId(id, dynamic);
+            return {
+                styleId: styleId,
+                rules: Array.isArray(css) ? css.map(function(rule) {
+                    return computeSelector(styleId, rule);
+                }) : [
+                    computeSelector(styleId, css)
+                ]
+            };
+        }
+        return {
+            styleId: computeId(id),
+            rules: Array.isArray(css) ? css : [
+                css
+            ]
+        };
+    };
+    /**
+   * selectFromServer
+   *
+   * Collects style tags from the document with id __jsx-XXX
+   */ _proto.selectFromServer = function selectFromServer() {
+        var elements = Array.prototype.slice.call(document.querySelectorAll('[id^="__jsx-"]'));
+        return elements.reduce(function(acc, element) {
+            var id = element.id.slice(2);
+            acc[id] = element;
+            return acc;
+        }, {});
+    };
+    return StyleSheetRegistry;
+}();
+function invariant(condition, message) {
+    if (!condition) {
+        throw new Error("StyleSheetRegistry: " + message + ".");
+    }
+}
+var StyleSheetContext = /*#__PURE__*/ React.createContext(null);
+StyleSheetContext.displayName = "StyleSheetContext";
+function createStyleRegistry() {
+    return new StyleSheetRegistry();
+}
+function StyleRegistry(param) {
+    var configuredRegistry = param.registry, children = param.children;
+    var rootRegistry = React.useContext(StyleSheetContext);
+    var ref = React.useState(function() {
+        return rootRegistry || configuredRegistry || createStyleRegistry();
+    }), registry = ref[0];
+    return /*#__PURE__*/ React__default["default"].createElement(StyleSheetContext.Provider, {
+        value: registry
+    }, children);
+}
+function useStyleRegistry() {
+    return React.useContext(StyleSheetContext);
+}
+// Opt-into the new `useInsertionEffect` API in React 18, fallback to `useLayoutEffect`.
+// https://github.com/reactwg/react-18/discussions/110
+var useInsertionEffect = React__default["default"].useInsertionEffect || React__default["default"].useLayoutEffect;
+var defaultRegistry = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : undefined;
+function JSXStyle(props) {
+    var registry = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : useStyleRegistry();
+    // If `registry` does not exist, we do nothing here.
+    if (!registry) {
+        return null;
+    }
+    if ("TURBOPACK compile-time truthy", 1) {
+        registry.add(props);
+        return null;
+    }
+    //TURBOPACK unreachable
+    ;
+}
+JSXStyle.dynamic = function(info) {
+    return info.map(function(tagInfo) {
+        var baseId = tagInfo[0];
+        var props = tagInfo[1];
+        return computeId(baseId, props);
+    }).join(" ");
+};
+exports.StyleRegistry = StyleRegistry;
+exports.createStyleRegistry = createStyleRegistry;
+exports.style = JSXStyle;
+exports.useStyleRegistry = useStyleRegistry;
+}),
+"[project]/node_modules/styled-jsx/style.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = __turbopack_context__.r("[project]/node_modules/styled-jsx/dist/index/index.js [app-ssr] (ecmascript)").style;
+}),
+"[project]/node_modules/motion-dom/dist/es/scroll/observe.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "observeTimeline",
+    ()=>observeTimeline
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+;
+function observeTimeline(update, timeline) {
+    let prevProgress;
+    const onFrame = ()=>{
+        const { currentTime } = timeline;
+        const percentage = currentTime === null ? 0 : currentTime.value;
+        const progress = percentage / 100;
+        if (prevProgress !== progress) {
+            update(progress);
+        }
+        prevProgress = progress;
+    };
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].preUpdate(onFrame, true);
+    return ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cancelFrame"])(onFrame);
+}
+;
+ //# sourceMappingURL=observe.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/can-use-native-timeline.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "canUseNativeTimeline",
+    ()=>canUseNativeTimeline
+]);
+;
+function canUseNativeTimeline(target) {
+    if ("TURBOPACK compile-time truthy", 1) return false;
+    //TURBOPACK unreachable
+    ;
+}
+;
+ //# sourceMappingURL=can-use-native-timeline.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/info.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createScrollInfo",
+    ()=>createScrollInfo,
+    "updateScrollInfo",
+    ()=>updateScrollInfo
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$progress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/progress.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/velocity-per-second.mjs [app-ssr] (ecmascript)");
+;
+/**
+ * A time in milliseconds, beyond which we consider the scroll velocity to be 0.
+ */ const maxElapsed = 50;
+const createAxisInfo = ()=>({
+        current: 0,
+        offset: [],
+        progress: 0,
+        scrollLength: 0,
+        targetOffset: 0,
+        targetLength: 0,
+        containerLength: 0,
+        velocity: 0
+    });
+const createScrollInfo = ()=>({
+        time: 0,
+        x: createAxisInfo(),
+        y: createAxisInfo()
+    });
+const keys = {
+    x: {
+        length: "Width",
+        position: "Left"
+    },
+    y: {
+        length: "Height",
+        position: "Top"
+    }
+};
+function updateAxisInfo(element, axisName, info, time) {
+    const axis = info[axisName];
+    const { length, position } = keys[axisName];
+    const prev = axis.current;
+    const prevTime = info.time;
+    axis.current = Math.abs(element[`scroll${position}`]);
+    axis.scrollLength = element[`scroll${length}`] - element[`client${length}`];
+    axis.offset.length = 0;
+    axis.offset[0] = 0;
+    axis.offset[1] = axis.scrollLength;
+    axis.progress = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$progress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["progress"])(0, axis.scrollLength, axis.current);
+    const elapsed = time - prevTime;
+    axis.velocity = elapsed > maxElapsed ? 0 : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["velocityPerSecond"])(axis.current - prev, elapsed);
+}
+function updateScrollInfo(element, info, time) {
+    updateAxisInfo(element, "x", info, time);
+    updateAxisInfo(element, "y", info, time);
+    info.time = time;
+}
+;
+ //# sourceMappingURL=info.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/inset.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "calcInset",
+    ()=>calcInset
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$is$2d$html$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/is-html-element.mjs [app-ssr] (ecmascript)");
+;
+function calcInset(element, container) {
+    const inset = {
+        x: 0,
+        y: 0
+    };
+    let current = element;
+    while(current && current !== container){
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$is$2d$html$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isHTMLElement"])(current)) {
+            inset.x += current.offsetLeft;
+            inset.y += current.offsetTop;
+            current = current.offsetParent;
+        } else if (current.tagName === "svg") {
+            /**
+             * This isn't an ideal approach to measuring the offset of <svg /> tags.
+             * It would be preferable, given they behave like HTMLElements in most ways
+             * to use offsetLeft/Top. But these don't exist on <svg />. Likewise we
+             * can't use .getBBox() like most SVG elements as these provide the offset
+             * relative to the SVG itself, which for <svg /> is usually 0x0.
+             */ const svgBoundingBox = current.getBoundingClientRect();
+            current = current.parentElement;
+            const parentBoundingBox = current.getBoundingClientRect();
+            inset.x += svgBoundingBox.left - parentBoundingBox.left;
+            inset.y += svgBoundingBox.top - parentBoundingBox.top;
+        } else if (current instanceof SVGGraphicsElement) {
+            const { x, y } = current.getBBox();
+            inset.x += x;
+            inset.y += y;
+            let svg = null;
+            let parent = current.parentNode;
+            while(!svg){
+                if (parent.tagName === "svg") {
+                    svg = parent;
+                }
+                parent = current.parentNode;
+            }
+            current = svg;
+        } else {
+            break;
+        }
+    }
+    return inset;
+}
+;
+ //# sourceMappingURL=inset.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/edge.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "namedEdges",
+    ()=>namedEdges,
+    "resolveEdge",
+    ()=>resolveEdge
+]);
+const namedEdges = {
+    start: 0,
+    center: 0.5,
+    end: 1
+};
+function resolveEdge(edge, length, inset = 0) {
+    let delta = 0;
+    /**
+     * If we have this edge defined as a preset, replace the definition
+     * with the numerical value.
+     */ if (edge in namedEdges) {
+        edge = namedEdges[edge];
+    }
+    /**
+     * Handle unit values
+     */ if (typeof edge === "string") {
+        const asNumber = parseFloat(edge);
+        if (edge.endsWith("px")) {
+            delta = asNumber;
+        } else if (edge.endsWith("%")) {
+            edge = asNumber / 100;
+        } else if (edge.endsWith("vw")) {
+            delta = asNumber / 100 * document.documentElement.clientWidth;
+        } else if (edge.endsWith("vh")) {
+            delta = asNumber / 100 * document.documentElement.clientHeight;
+        } else {
+            edge = asNumber;
+        }
+    }
+    /**
+     * If the edge is defined as a number, handle as a progress value.
+     */ if (typeof edge === "number") {
+        delta = length * edge;
+    }
+    return inset + delta;
+}
+;
+ //# sourceMappingURL=edge.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/offset.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "resolveOffset",
+    ()=>resolveOffset
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$edge$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/edge.mjs [app-ssr] (ecmascript)");
+;
+const defaultOffset = [
+    0,
+    0
+];
+function resolveOffset(offset, containerLength, targetLength, targetInset) {
+    let offsetDefinition = Array.isArray(offset) ? offset : defaultOffset;
+    let targetPoint = 0;
+    let containerPoint = 0;
+    if (typeof offset === "number") {
+        /**
+         * If we're provided offset: [0, 0.5, 1] then each number x should become
+         * [x, x], so we default to the behaviour of mapping 0 => 0 of both target
+         * and container etc.
+         */ offsetDefinition = [
+            offset,
+            offset
+        ];
+    } else if (typeof offset === "string") {
+        offset = offset.trim();
+        if (offset.includes(" ")) {
+            offsetDefinition = offset.split(" ");
+        } else {
+            /**
+             * If we're provided a definition like "100px" then we want to apply
+             * that only to the top of the target point, leaving the container at 0.
+             * Whereas a named offset like "end" should be applied to both.
+             */ offsetDefinition = [
+                offset,
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$edge$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["namedEdges"][offset] ? offset : `0`
+            ];
+        }
+    }
+    targetPoint = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$edge$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveEdge"])(offsetDefinition[0], targetLength, targetInset);
+    containerPoint = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$edge$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveEdge"])(offsetDefinition[1], containerLength);
+    return targetPoint - containerPoint;
+}
+;
+ //# sourceMappingURL=offset.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/presets.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ScrollOffset",
+    ()=>ScrollOffset
+]);
+const ScrollOffset = {
+    Enter: [
+        [
+            0,
+            1
+        ],
+        [
+            1,
+            1
+        ]
+    ],
+    Exit: [
+        [
+            0,
+            0
+        ],
+        [
+            1,
+            0
+        ]
+    ],
+    Any: [
+        [
+            1,
+            0
+        ],
+        [
+            0,
+            1
+        ]
+    ],
+    All: [
+        [
+            0,
+            0
+        ],
+        [
+            1,
+            1
+        ]
+    ]
+};
+;
+ //# sourceMappingURL=presets.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "resolveOffsets",
+    ()=>resolveOffsets
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/interpolate.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$default$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/animation/keyframes/offsets/default.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/clamp.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$inset$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/inset.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$offset$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/offset.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/presets.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+const point = {
+    x: 0,
+    y: 0
+};
+function getTargetSize(target) {
+    return "getBBox" in target && target.tagName !== "svg" ? target.getBBox() : {
+        width: target.clientWidth,
+        height: target.clientHeight
+    };
+}
+function resolveOffsets(container, info, options) {
+    const { offset: offsetDefinition = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollOffset"].All } = options;
+    const { target = container, axis = "y" } = options;
+    const lengthLabel = axis === "y" ? "height" : "width";
+    const inset = target !== container ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$inset$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calcInset"])(target, container) : point;
+    /**
+     * Measure the target and container. If they're the same thing then we
+     * use the container's scrollWidth/Height as the target, from there
+     * all other calculations can remain the same.
+     */ const targetSize = target === container ? {
+        width: container.scrollWidth,
+        height: container.scrollHeight
+    } : getTargetSize(target);
+    const containerSize = {
+        width: container.clientWidth,
+        height: container.clientHeight
+    };
+    /**
+     * Reset the length of the resolved offset array rather than creating a new one.
+     * TODO: More reusable data structures for targetSize/containerSize would also be good.
+     */ info[axis].offset.length = 0;
+    /**
+     * Populate the offset array by resolving the user's offset definition into
+     * a list of pixel scroll offets.
+     */ let hasChanged = !info[axis].interpolate;
+    const numOffsets = offsetDefinition.length;
+    for(let i = 0; i < numOffsets; i++){
+        const offset = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$offset$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveOffset"])(offsetDefinition[i], containerSize[lengthLabel], targetSize[lengthLabel], inset[axis]);
+        if (!hasChanged && offset !== info[axis].interpolatorOffsets[i]) {
+            hasChanged = true;
+        }
+        info[axis].offset[i] = offset;
+    }
+    /**
+     * If the pixel scroll offsets have changed, create a new interpolator function
+     * to map scroll value into a progress.
+     */ if (hasChanged) {
+        info[axis].interpolate = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["interpolate"])(info[axis].offset, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$default$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["defaultOffset"])(offsetDefinition), {
+            clamp: false
+        });
+        info[axis].interpolatorOffsets = [
+            ...info[axis].offset
+        ];
+    }
+    info[axis].progress = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clamp"])(0, 1, info[axis].interpolate(info[axis].current));
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/on-scroll-handler.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createOnScrollHandler",
+    ()=>createOnScrollHandler
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/warn-once.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$info$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/info.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/index.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function measure(container, target = container, info) {
+    /**
+     * Find inset of target within scrollable container
+     */ info.x.targetOffset = 0;
+    info.y.targetOffset = 0;
+    if (target !== container) {
+        let node = target;
+        while(node && node !== container){
+            info.x.targetOffset += node.offsetLeft;
+            info.y.targetOffset += node.offsetTop;
+            node = node.offsetParent;
+        }
+    }
+    info.x.targetLength = target === container ? target.scrollWidth : target.clientWidth;
+    info.y.targetLength = target === container ? target.scrollHeight : target.clientHeight;
+    info.x.containerLength = container.clientWidth;
+    info.y.containerLength = container.clientHeight;
+    /**
+     * In development mode ensure scroll containers aren't position: static as this makes
+     * it difficult to measure their relative positions.
+     */ if ("TURBOPACK compile-time truthy", 1) {
+        if (container && target && target !== container) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warnOnce"])(getComputedStyle(container).position !== "static", "Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.");
+        }
+    }
+}
+function createOnScrollHandler(element, onScroll, info, options = {}) {
+    return {
+        measure: (time)=>{
+            measure(element, options.target, info);
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$info$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["updateScrollInfo"])(element, info, time);
+            if (options.offset || options.target) {
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveOffsets"])(element, info, options);
+            }
+        },
+        notify: ()=>onScroll(info)
+    };
+}
+;
+ //# sourceMappingURL=on-scroll-handler.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/track.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "scrollInfo",
+    ()=>scrollInfo
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$resize$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/resize/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$info$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/info.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$on$2d$scroll$2d$handler$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/on-scroll-handler.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+const scrollListeners = new WeakMap();
+const resizeListeners = new WeakMap();
+const onScrollHandlers = new WeakMap();
+const scrollSize = new WeakMap();
+const dimensionCheckProcesses = new WeakMap();
+const getEventTarget = (element)=>element === document.scrollingElement ? window : element;
+function scrollInfo(onScroll, { container = document.scrollingElement, trackContentSize = false, ...options } = {}) {
+    if (!container) return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"];
+    let containerHandlers = onScrollHandlers.get(container);
+    /**
+     * Get the onScroll handlers for this container.
+     * If one isn't found, create a new one.
+     */ if (!containerHandlers) {
+        containerHandlers = new Set();
+        onScrollHandlers.set(container, containerHandlers);
+    }
+    /**
+     * Create a new onScroll handler for the provided callback.
+     */ const info = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$info$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createScrollInfo"])();
+    const containerHandler = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$on$2d$scroll$2d$handler$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createOnScrollHandler"])(container, onScroll, info, options);
+    containerHandlers.add(containerHandler);
+    /**
+     * Check if there's a scroll event listener for this container.
+     * If not, create one.
+     */ if (!scrollListeners.has(container)) {
+        const measureAll = ()=>{
+            for (const handler of containerHandlers){
+                handler.measure(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frameData"].timestamp);
+            }
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].preUpdate(notifyAll);
+        };
+        const notifyAll = ()=>{
+            for (const handler of containerHandlers){
+                handler.notify();
+            }
+        };
+        const listener = ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].read(measureAll);
+        scrollListeners.set(container, listener);
+        const target = getEventTarget(container);
+        window.addEventListener("resize", listener);
+        if (container !== document.documentElement) {
+            resizeListeners.set(container, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$resize$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resize"])(container, listener));
+        }
+        target.addEventListener("scroll", listener);
+        listener();
+    }
+    /**
+     * Enable content size tracking if requested and not already enabled.
+     */ if (trackContentSize && !dimensionCheckProcesses.has(container)) {
+        const listener = scrollListeners.get(container);
+        // Store initial scroll dimensions (object is reused to avoid allocation)
+        const size = {
+            width: container.scrollWidth,
+            height: container.scrollHeight
+        };
+        scrollSize.set(container, size);
+        // Add frame-based scroll dimension checking to detect content changes
+        const checkScrollDimensions = ()=>{
+            const newWidth = container.scrollWidth;
+            const newHeight = container.scrollHeight;
+            if (size.width !== newWidth || size.height !== newHeight) {
+                listener();
+                size.width = newWidth;
+                size.height = newHeight;
+            }
+        };
+        // Schedule with keepAlive=true to run every frame
+        const dimensionCheckProcess = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].read(checkScrollDimensions, true);
+        dimensionCheckProcesses.set(container, dimensionCheckProcess);
+    }
+    const listener = scrollListeners.get(container);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].read(listener, false, true);
+    return ()=>{
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cancelFrame"])(listener);
+        /**
+         * Check if we even have any handlers for this container.
+         */ const currentHandlers = onScrollHandlers.get(container);
+        if (!currentHandlers) return;
+        currentHandlers.delete(containerHandler);
+        if (currentHandlers.size) return;
+        /**
+         * If no more handlers, remove the scroll listener too.
+         */ const scrollListener = scrollListeners.get(container);
+        scrollListeners.delete(container);
+        if (scrollListener) {
+            getEventTarget(container).removeEventListener("scroll", scrollListener);
+            resizeListeners.get(container)?.();
+            window.removeEventListener("resize", scrollListener);
+        }
+        // Clean up scroll dimension checking
+        const dimensionCheckProcess = dimensionCheckProcesses.get(container);
+        if (dimensionCheckProcess) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cancelFrame"])(dimensionCheckProcess);
+            dimensionCheckProcesses.delete(container);
+        }
+        scrollSize.delete(container);
+    };
+}
+;
+ //# sourceMappingURL=track.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/offset-to-range.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "offsetToViewTimelineRange",
+    ()=>offsetToViewTimelineRange
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/presets.mjs [app-ssr] (ecmascript)");
+;
+/**
+ * Maps from ProgressIntersection pairs used by Motion's preset offsets to
+ * ViewTimeline named ranges. Returns undefined for unrecognised patterns,
+ * which signals the caller to fall back to JS-based scroll tracking.
+ */ const presets = [
+    [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollOffset"].Enter,
+        "entry"
+    ],
+    [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollOffset"].Exit,
+        "exit"
+    ],
+    [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollOffset"].Any,
+        "cover"
+    ],
+    [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollOffset"].All,
+        "contain"
+    ]
+];
+function matchesPreset(offset, preset) {
+    if (offset.length !== 2) return false;
+    for(let i = 0; i < 2; i++){
+        const o = offset[i];
+        const p = preset[i];
+        if (!Array.isArray(o) || o.length !== 2 || o[0] !== p[0] || o[1] !== p[1]) return false;
+    }
+    return true;
+}
+function offsetToViewTimelineRange(offset) {
+    if (!offset) {
+        return {
+            rangeStart: "contain 0%",
+            rangeEnd: "contain 100%"
+        };
+    }
+    for (const [preset, name] of presets){
+        if (matchesPreset(offset, preset)) {
+            return {
+                rangeStart: `${name} 0%`,
+                rangeEnd: `${name} 100%`
+            };
+        }
+    }
+    return undefined;
+}
+;
+ //# sourceMappingURL=offset-to-range.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/get-timeline.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getTimeline",
+    ()=>getTimeline
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$track$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/track.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/can-use-native-timeline.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/offset-to-range.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+const timelineCache = new Map();
+function scrollTimelineFallback(options) {
+    const currentTime = {
+        value: 0
+    };
+    const cancel = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$track$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scrollInfo"])((info)=>{
+        currentTime.value = info[options.axis].progress * 100;
+    }, options);
+    return {
+        currentTime,
+        cancel
+    };
+}
+function getTimeline({ source, container, ...options }) {
+    const { axis } = options;
+    if (source) container = source;
+    let containerCache = timelineCache.get(container);
+    if (!containerCache) {
+        containerCache = new Map();
+        timelineCache.set(container, containerCache);
+    }
+    const targetKey = options.target ?? "self";
+    let targetCache = containerCache.get(targetKey);
+    if (!targetCache) {
+        targetCache = {};
+        containerCache.set(targetKey, targetCache);
+    }
+    const axisKey = axis + (options.offset ?? []).join(",");
+    if (!targetCache[axisKey]) {
+        if (options.target && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["canUseNativeTimeline"])(options.target)) {
+            const range = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["offsetToViewTimelineRange"])(options.offset);
+            if (range) {
+                targetCache[axisKey] = new ViewTimeline({
+                    subject: options.target,
+                    axis
+                });
+            } else {
+                targetCache[axisKey] = scrollTimelineFallback({
+                    container,
+                    ...options
+                });
+            }
+        } else if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["canUseNativeTimeline"])()) {
+            targetCache[axisKey] = new ScrollTimeline({
+                source: container,
+                axis
+            });
+        } else {
+            targetCache[axisKey] = scrollTimelineFallback({
+                container,
+                ...options
+            });
+        }
+    }
+    return targetCache[axisKey];
+}
+;
+ //# sourceMappingURL=get-timeline.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "attachToAnimation",
+    ()=>attachToAnimation
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$scroll$2f$observe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/scroll/observe.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/can-use-native-timeline.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$get$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/get-timeline.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/offset-to-range.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+function attachToAnimation(animation, options) {
+    const timeline = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$get$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getTimeline"])(options);
+    const range = options.target ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["offsetToViewTimelineRange"])(options.offset) : undefined;
+    /**
+     * Use native timeline when:
+     * - No target: ScrollTimeline (existing behaviour)
+     * - Target with mappable offset: ViewTimeline with named range
+     * - Target with unmappable offset: fall back to JS observe
+     */ const useNative = options.target ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["canUseNativeTimeline"])(options.target) && !!range : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["canUseNativeTimeline"])();
+    return animation.attachTimeline({
+        timeline: useNative ? timeline : undefined,
+        ...range && useNative && {
+            rangeStart: range.rangeStart,
+            rangeEnd: range.rangeEnd
+        },
+        observe: (valueAnimation)=>{
+            valueAnimation.pause();
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$scroll$2f$observe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["observeTimeline"])((progress)=>{
+                valueAnimation.time = valueAnimation.iterationDuration * progress;
+            }, timeline);
+        }
+    });
+}
+;
+ //# sourceMappingURL=attach-animation.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/attach-function.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "attachToFunction",
+    ()=>attachToFunction
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$scroll$2f$observe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/scroll/observe.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$track$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/track.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$get$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/get-timeline.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+/**
+ * If the onScroll function has two arguments, it's expecting
+ * more specific information about the scroll from scrollInfo.
+ */ function isOnScrollWithInfo(onScroll) {
+    return onScroll.length === 2;
+}
+function attachToFunction(onScroll, options) {
+    if (isOnScrollWithInfo(onScroll)) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$track$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scrollInfo"])((info)=>{
+            onScroll(info[options.axis].progress, info);
+        }, options);
+    } else {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$scroll$2f$observe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["observeTimeline"])(onScroll, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$get$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getTimeline"])(options));
+    }
+}
+;
+ //# sourceMappingURL=attach-function.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "scroll",
+    ()=>scroll
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$attach$2d$animation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$attach$2d$function$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/attach-function.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function scroll(onScroll, { axis = "y", container = document.scrollingElement, ...options } = {}) {
+    if (!container) return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"];
+    const optionsWithDefaults = {
+        axis,
+        container,
+        ...options
+    };
+    return typeof onScroll === "function" ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$attach$2d$function$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["attachToFunction"])(onScroll, optionsWithDefaults) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$attach$2d$animation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["attachToAnimation"])(onScroll, optionsWithDefaults);
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-scroll.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useScroll",
+    ()=>useScroll
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/value/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-constant.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-isomorphic-effect.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+const createScrollMotionValues = ()=>({
+        scrollX: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motionValue"])(0),
+        scrollY: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motionValue"])(0),
+        scrollXProgress: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motionValue"])(0),
+        scrollYProgress: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motionValue"])(0)
+    });
+const isRefPending = (ref)=>{
+    if (!ref) return false;
+    return !ref.current;
+};
+function makeAccelerateConfig(axis, options, container, target) {
+    return {
+        factory: (animation)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scroll"])(animation, {
+                ...options,
+                axis,
+                container: container?.current || undefined,
+                target: target?.current || undefined
+            }),
+        times: [
+            0,
+            1
+        ],
+        keyframes: [
+            0,
+            1
+        ],
+        ease: (v)=>v,
+        duration: 1
+    };
+}
+function canAccelerateScroll(target, offset) {
+    if ("TURBOPACK compile-time truthy", 1) return false;
+    //TURBOPACK unreachable
+    ;
+}
+function useScroll({ container, target, ...options } = {}) {
+    const values = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConstant"])(createScrollMotionValues);
+    if (canAccelerateScroll(target, options.offset)) {
+        values.scrollXProgress.accelerate = makeAccelerateConfig("x", options, container, target);
+        values.scrollYProgress.accelerate = makeAccelerateConfig("y", options, container, target);
+    }
+    const scrollAnimation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const needsStart = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
+    const start = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
+        scrollAnimation.current = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scroll"])((_progress, { x, y })=>{
+            values.scrollX.set(x.current);
+            values.scrollXProgress.set(x.progress);
+            values.scrollY.set(y.current);
+            values.scrollYProgress.set(y.progress);
+        }, {
+            ...options,
+            container: container?.current || undefined,
+            target: target?.current || undefined
+        });
+        return ()=>{
+            scrollAnimation.current?.();
+        };
+    }, [
+        container,
+        target,
+        JSON.stringify(options.offset)
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useIsomorphicLayoutEffect"])(()=>{
+        needsStart.current = false;
+        if (isRefPending(container) || isRefPending(target)) {
+            needsStart.current = true;
+            return;
+        } else {
+            return start();
+        }
+    }, [
+        start
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (needsStart.current) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(!isRefPending(container), "Container ref is defined but not hydrated", "use-scroll-ref");
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(!isRefPending(target), "Target ref is defined but not hydrated", "use-scroll-ref");
+            return start();
+        } else {
+            return;
+        }
+    }, [
+        start
+    ]);
+    return values;
+}
+;
+ //# sourceMappingURL=use-scroll.mjs.map
+}),
+"[project]/node_modules/motion-dom/dist/es/utils/transform.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "transform",
+    ()=>transform
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/interpolate.mjs [app-ssr] (ecmascript)");
+;
+function transform(...args) {
+    const useImmediate = !Array.isArray(args[0]);
+    const argOffset = useImmediate ? 0 : -1;
+    const inputValue = args[0 + argOffset];
+    const inputRange = args[1 + argOffset];
+    const outputRange = args[2 + argOffset];
+    const options = args[3 + argOffset];
+    const interpolator = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["interpolate"])(inputRange, outputRange, options);
+    return useImmediate ? interpolator(inputValue) : interpolator;
+}
+;
+ //# sourceMappingURL=transform.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-motion-value.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useMotionValue",
+    ()=>useMotionValue
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/value/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$context$2f$MotionConfigContext$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/context/MotionConfigContext.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-constant.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+/**
+ * Creates a `MotionValue` to track the state and velocity of a value.
+ *
+ * Usually, these are created automatically. For advanced use-cases, like use with `useTransform`, you can create `MotionValue`s externally and pass them into the animated component via the `style` prop.
+ *
+ * ```jsx
+ * export const MyComponent = () => {
+ *   const scale = useMotionValue(1)
+ *
+ *   return <motion.div style={{ scale }} />
+ * }
+ * ```
+ *
+ * @param initial - The initial state.
+ *
+ * @public
+ */ function useMotionValue(initial) {
+    const value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConstant"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motionValue"])(initial));
+    /**
+     * If this motion value is being used in static mode, like on
+     * the Framer canvas, force components to rerender when the motion
+     * value is updated.
+     */ const { isStatic } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$context$2f$MotionConfigContext$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionConfigContext"]);
+    if (isStatic) {
+        const [, setLatest] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(initial);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>value.on("change", setLatest), []);
+    }
+    return value;
+}
+;
+ //# sourceMappingURL=use-motion-value.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-combine-values.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useCombineMotionValues",
+    ()=>useCombineMotionValues
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-isomorphic-effect.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-motion-value.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+function useCombineMotionValues(values, combineValues) {
+    /**
+     * Initialise the returned motion value. This remains the same between renders.
+     */ const value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMotionValue"])(combineValues());
+    /**
+     * Create a function that will update the template motion value with the latest values.
+     * This is pre-bound so whenever a motion value updates it can schedule its
+     * execution in Framesync. If it's already been scheduled it won't be fired twice
+     * in a single frame.
+     */ const updateValue = ()=>value.set(combineValues());
+    /**
+     * Synchronously update the motion value with the latest values during the render.
+     * This ensures that within a React render, the styles applied to the DOM are up-to-date.
+     */ updateValue();
+    /**
+     * Subscribe to all motion values found within the template. Whenever any of them change,
+     * schedule an update.
+     */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useIsomorphicLayoutEffect"])(()=>{
+        const scheduleUpdate = ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].preRender(updateValue, false, true);
+        const subscriptions = values.map((v)=>v.on("change", scheduleUpdate));
+        return ()=>{
+            subscriptions.forEach((unsubscribe)=>unsubscribe());
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cancelFrame"])(updateValue);
+        };
+    });
+    return value;
+}
+;
+ //# sourceMappingURL=use-combine-values.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-computed.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useComputed",
+    ()=>useComputed
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/value/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$combine$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-combine-values.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+function useComputed(compute) {
+    /**
+     * Open session of collectMotionValues. Any MotionValue that calls get()
+     * will be saved into this array.
+     */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["collectMotionValues"].current = [];
+    compute();
+    const value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$combine$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCombineMotionValues"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["collectMotionValues"].current, compute);
+    /**
+     * Synchronously close session of collectMotionValues.
+     */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["collectMotionValues"].current = undefined;
+    return value;
+}
+;
+ //# sourceMappingURL=use-computed.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-transform.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useTransform",
+    ()=>useTransform
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-constant.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$combine$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-combine-values.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$computed$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-computed.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function useTransform(input, inputRangeOrTransformer, outputRangeOrMap, options) {
+    if (typeof input === "function") {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$computed$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useComputed"])(input);
+    }
+    /**
+     * Detect if outputRangeOrMap is an output map (object with keys)
+     * rather than an output range (array).
+     */ const isOutputMap = outputRangeOrMap !== undefined && !Array.isArray(outputRangeOrMap) && typeof inputRangeOrTransformer !== "function";
+    if (isOutputMap) {
+        return useMapTransform(input, inputRangeOrTransformer, outputRangeOrMap, options);
+    }
+    const outputRange = outputRangeOrMap;
+    const transformer = typeof inputRangeOrTransformer === "function" ? inputRangeOrTransformer : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transform"])(inputRangeOrTransformer, outputRange, options);
+    const result = Array.isArray(input) ? useListTransform(input, transformer) : useListTransform([
+        input
+    ], ([latest])=>transformer(latest));
+    const inputAccelerate = !Array.isArray(input) ? input.accelerate : undefined;
+    if (inputAccelerate && !inputAccelerate.isTransformed && typeof inputRangeOrTransformer !== "function" && Array.isArray(outputRangeOrMap) && options?.clamp !== false) {
+        result.accelerate = {
+            ...inputAccelerate,
+            times: inputRangeOrTransformer,
+            keyframes: outputRangeOrMap,
+            isTransformed: true,
+            ...options?.ease ? {
+                ease: options.ease
+            } : {}
+        };
+    }
+    return result;
+}
+function useListTransform(values, transformer) {
+    const latest = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConstant"])(()=>[]);
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$combine$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCombineMotionValues"])(values, ()=>{
+        latest.length = 0;
+        const numValues = values.length;
+        for(let i = 0; i < numValues; i++){
+            latest[i] = values[i].get();
+        }
+        return transformer(latest);
+    });
+}
+function useMapTransform(inputValue, inputRange, outputMap, options) {
+    /**
+     * Capture keys once to ensure hooks are called in consistent order.
+     */ const keys = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConstant"])(()=>Object.keys(outputMap));
+    const output = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConstant"])(()=>({}));
+    for (const key of keys){
+        output[key] = useTransform(inputValue, inputRange, outputMap[key], options);
+    }
+    return output;
+}
+;
+ //# sourceMappingURL=use-transform.mjs.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Star
+]);
+/**
+ * @license lucide-react v0.577.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z",
+            key: "r04s7s"
+        }
+    ]
+];
+const Star = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("star", __iconNode);
+;
+ //# sourceMappingURL=star.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-ssr] (ecmascript) <export default as Star>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Star",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-ssr] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/chef-hat.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>ChefHat
+]);
+/**
+ * @license lucide-react v0.577.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z",
+            key: "1qvrer"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M6 17h12",
+            key: "1jwigz"
+        }
+    ]
+];
+const ChefHat = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("chef-hat", __iconNode);
+;
+ //# sourceMappingURL=chef-hat.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/chef-hat.js [app-ssr] (ecmascript) <export default as ChefHat>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ChefHat",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chef$2d$hat$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chef$2d$hat$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chef-hat.js [app-ssr] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/utensils.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Utensils
+]);
+/**
+ * @license lucide-react v0.577.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2",
+            key: "cjf0a3"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M7 2v20",
+            key: "1473qp"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7",
+            key: "j28e5"
+        }
+    ]
+];
+const Utensils = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("utensils", __iconNode);
+;
+ //# sourceMappingURL=utensils.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/utensils.js [app-ssr] (ecmascript) <export default as Utensils>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Utensils",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$utensils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$utensils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/utensils.js [app-ssr] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/wine.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Wine
+]);
+/**
+ * @license lucide-react v0.577.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M8 22h8",
+            key: "rmew8v"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M7 10h10",
+            key: "1101jm"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M12 15v7",
+            key: "t2xh3l"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z",
+            key: "10ffi3"
+        }
+    ]
+];
+const Wine = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("wine", __iconNode);
+;
+ //# sourceMappingURL=wine.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/wine.js [app-ssr] (ecmascript) <export default as Wine>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Wine",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wine$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wine$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/wine.js [app-ssr] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Clock
+]);
+/**
+ * @license lucide-react v0.577.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "circle",
+        {
+            cx: "12",
+            cy: "12",
+            r: "10",
+            key: "1mglay"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M12 6v6l4 2",
+            key: "mmk7yg"
+        }
+    ]
+];
+const Clock = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("clock", __iconNode);
+;
+ //# sourceMappingURL=clock.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-ssr] (ecmascript) <export default as Clock>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Clock",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-ssr] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/award.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Award
+]);
+/**
+ * @license lucide-react v0.577.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526",
+            key: "1yiouv"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "12",
+            cy: "8",
+            r: "6",
+            key: "1vp47v"
+        }
+    ]
+];
+const Award = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("award", __iconNode);
+;
+ //# sourceMappingURL=award.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/award.js [app-ssr] (ecmascript) <export default as Award>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Award",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/award.js [app-ssr] (ecmascript)");
+}),
+];
+
+//# sourceMappingURL=_2b06a945._.js.map

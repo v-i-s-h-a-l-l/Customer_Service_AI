@@ -17,13 +17,19 @@ def run_rag(user_id, query, customer_type: str | None = None):
 
     Steps:
     1. Intent detection
-    2. Booking → LangGraph agent
+    2. Restaurant booking → Booking agent directly
     3. Otherwise → RAG pipeline
-    4. Vector search
-    5. Graph expansion
-    6. Tavily fallback
-    7. LLM generates final answer
     """
+
+    domain = customer_type or DEFAULT_CUSTOMER_DOMAIN
+
+    # =====================================================
+    # RESTAURANT MODE → SKIP RAG COMPLETELY
+    # =====================================================
+
+    if domain == "restaurant":
+        print("🍽 Restaurant mode → Using booking agent (Skipping RAG + Tavily)")
+        return run_booking_agent(user_id, query)
 
     # =====================================================
     # INTENT ROUTING
@@ -32,14 +38,12 @@ def run_rag(user_id, query, customer_type: str | None = None):
     intent = detect_intent(query)
 
     if intent == "booking":
-        print("🍽 Booking intent detected → Using LangGraph agent")
-        return run_booking_agent(query)
+        print("🚗 Booking intent detected → Using booking agent")
+        return run_booking_agent(user_id, query)
 
     # =====================================================
     # NORMAL RAG PIPELINE
     # =====================================================
-
-    domain = customer_type or DEFAULT_CUSTOMER_DOMAIN
 
     print("\n🚀 Running RAG...")
 

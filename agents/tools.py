@@ -5,26 +5,33 @@ from langchain.tools import tool
 @tool
 def reserve_table(
     name: str,
-    email: str,
     date: str,
-    time: str,
+    meal_slot: str,
     people: int,
     section: str,
-    duration: str,
 ):
-    """Reserve a restaurant table"""
+    """
+    Reserve a restaurant table at Aurora Dining.
+
+    Args:
+        name:      Guest's full name
+        date:      Reservation date in YYYY-MM-DD format
+        meal_slot: One of 'breakfast', 'lunch', or 'dinner'
+        people:    Number of guests
+        section:   'ac' or 'non_ac'
+    """
 
     response = requests.post(
         "http://localhost:8000/restaurant/reserve",
         json={
             "name": name,
-            "email": email,
             "date": date,
-            "time": time,
+            "meal_slot": meal_slot,
             "people": people,
             "section": section,
-            "duration": duration,
         },
+        timeout=10,
     )
 
+    response.raise_for_status()
     return response.json()

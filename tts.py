@@ -82,3 +82,24 @@ def speak(text: str):
     except Exception as e:
         print("❌ TTS Error:", str(e))
         return None
+
+
+def speak_bytes(text: str) -> bytes | None:
+    """
+    Convert text to speech and return raw WAV bytes (for web API use).
+    Does NOT save to file or play audio locally.
+    """
+    try:
+        response = client.text_to_speech.convert(
+            text=text, target_language_code="en-IN", model=MODEL, speaker=CURRENT_VOICE
+        )
+
+        audio_base64 = response.audios[0]
+        audio_bytes = base64.b64decode(audio_base64)
+
+        print(f"🔊 TTS bytes generated ({len(audio_bytes)} bytes)")
+        return audio_bytes
+
+    except Exception as e:
+        print("❌ TTS Error (speak_bytes):", str(e))
+        return None
