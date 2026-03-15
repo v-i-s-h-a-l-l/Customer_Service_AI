@@ -1,40 +1,20 @@
-# ======================
-# Python
-# ======================
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Virtual environments
-venv/
-env/
-.venv/
-
-# Environment variables
+# env
 .env
 
-# OS files
-.DS_Store
-Thumbs.db
+# python
+__pycache__/
+*.pyc
 
-# IDE
-.vscode/
-.idea/
-
-# Logs
-*.log
-
-# Temporary files
-temp*
+# audio
 *.wav
+audio_outputs/
 
-# Model cache
-.cache/
-huggingface/
+# databases
+*.db
 
-# Jupyter
-.ipynb_checkpoints/
+# cache
+embedding_cache.json
+retrieval_cache.json
 
-# API configs
-config.py
+# node
+node_modules/
